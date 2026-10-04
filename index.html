@@ -4,6 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Shop Website</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a href="#home" class="logo">CoffeeSHP</a>
+        <ul class="nav links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <p class="eyebrow">Roasted weekly. Shipped worldwide.</p>
+        <h1>Great coffee starts with great beans</h1>
+        <p class="hero-text">
+          Small-batch roasts sourced directly from farmers, delivered fresh to
+          your door.
+        </p>
+        <a href="#shop" class="btn">Shop Now</a>
+      </section>
+
+      <section id="shop" class="shop">
+        <h2>Our Menu</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="images/espresso-blend.jpg" alt="Bag of House Espresso Blend" />
+            <p class="product-category">Espresso</p>
+            <h3 class="product-name">House Espresso Blend</h3>
+            <p class="product-price">$16.00</p>
+            <button type="button" class="btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/ethiopia-yirgacheffe.jpg" alt="Bag of Ethiopia Yirgacheffe" />
+            <p class="product-category">Single Origin</p>
+            <h3 class="product-name">Ethiopia Yirgacheffe</h3>
+            <p class="product-price">$19.00</p>
+            <button type="button" class="btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/colombia-decaf.jpg" alt="Bag of Colombia Decaf" />
+            <p class="product-category">Decaf</p>
+            <h3 class="product-name">Colombia Decaf</h3>
+            <p class="product-price">$17.00</p>
+            <button type="button" class="btn">Add to Cart</button>
+          </article>
+
+          <article class="product-card">
+            <img src="images/cold-brew-pack.jpg" alt="Cold Brew Pack" />
+            <p class="product-category">Cold Brew</p>
+            <h3 class="product-name">Cold Brew Pack</h3>
+            <p class="product-price">$14.00</p>
+            <button type="button" class="btn">Add to Cart</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+          CoffeeSHP began as a tiny roastery with one goal: make exceptional
+          coffee simple to enjoy at home. We work directly with growers, roast
+          in small batches every week, and ship within days of roasting so
+          every cup tastes the way it should.
+        </p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 CoffeeSHP. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
